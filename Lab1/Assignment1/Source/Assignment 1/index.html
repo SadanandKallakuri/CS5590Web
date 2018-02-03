@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Course Registration</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="css/try.css" rel="stylesheet">
+
+</head>
+<body id="page-top" ng-app="Course">
+<div class="background">
+
+
+<!-- Navigation -->
+<a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#page-top">Start Registration</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#page-top">Courses</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#about">Streams</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#portfolio">Questions</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<div class="jumbotron text-center">
+    <h1>Course Registration</h1>
+</div>
+<br>
+<br>
+
+<div ng-controller="Coursecontroller">
+<div class="container">
+
+    <h3>Search For Classes</h3><hr>
+    <div class="row">
+<div class="col-sm-4">
+    <p style="font-size: large;font-family: 'Trebuchet MS'">Course Career:</p>
+
+    <div class="styled">
+        <select id="list1" accesskey="target">
+            <option value="grad">Graduate</option>
+            <option value="none" selected>Degree</option>
+            <option value="ug">Undergraduate</option>
+            <option value="med">Medicine</option>
+        </select>
+    </div><br>
+    <p><i>Choose your level of education.<br>Who you are?Grad, Undergrad <br>or Med student</i></p>
+</div>
+    <br>
+<div class="col-sm-4">
+    <p style="font-size: large;font-family: 'Trebuchet MS'">Term:</p>
+    <div class="styled">
+        <select id="list2" accesskey="target">
+            <option value="fall">Fall</option>
+            <option value="none" selected >Term</option>
+            <option value="spr">Spring</option>
+            <option value="sum">Summer</option>
+        </select>
+    </div>
+    <br>
+    <p><i>Choose your term of your enrollment.<br>Which semester are you enrolling for?<br>Fall, Spring or Summer sem</i></p><br><br>
+
+    <div align="center" class="button1">
+    <button  type="button" class="btn btn-info" onclick="nn()">SEARCH</button>
+</div>
+</div>
+    <br>
+<div class="col-sm-4">
+    <p style="font-size: large;font-family: 'Trebuchet MS'">Specialization:</p>
+    <div class="styled">
+        <select id="list3" accesskey="target">
+            <option value="cse">Computer Science</option>
+            <option value="none" selected>Stream</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="den">Dental</option>
+        </select>
+    </div>
+    <br>
+    <p><i>Choose your specialization interests.<br>Which stream are you interested in?<br>Computers, ELectricals or Dental</i></p>
+
+</div>
+        <br><br>
+    <br>
+</div>
+</div>
+</div>
+
+
+
+<script>
+    function nn() {
+        var a = document.getElementById("list1").value;
+        console.log(a)
+        var b = document.getElementById("list2").value;
+        console.log(b)
+        var c = document.getElementById("list3").value;
+        console.log(c)
+
+
+
+
+
+
+    if (a=='grad' &&b=='fall' && c=='cse'){
+        window.location="course1.html"
+    }
+        if (a=='med' &&b=='spr' && c=='den'){
+            window.location="medcourses.html"
+        }
+
+
+
+}
+    </script>
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+</div>
+
+</body>
+</html>

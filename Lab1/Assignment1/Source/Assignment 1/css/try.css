@@ -1,0 +1,55 @@
+.dropdown {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid black 1px;
+    height: 500px
+}
+.header {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid black 1px;
+    height: 120px
+}
+
+.styled select {
+    background: transparent;
+    width: 180px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+}
+.styled {
+    margin: 0px;
+    width: 230px;
+    height: 34px;
+    border: 1px solid #111;
+    border-radius: 3px;
+    overflow: hidden;
+    background: url(https://www.straubconstruction.com/wp-content/uploads/2017/04/UMKC_logo-800x600.jpg) 100% / 20% no-repeat #eee;
+}
+.courses {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid black 1px;
+    height: 120px
+}
+.alignleft{
+    float:left;
+}
+.alignright{
+    float:right;
+    padding-right: 500px;
+}
+.left{
+    float:left;
+}
+.input{
+    width:50%;
+}
+.background {
+
+}
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DAA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="css/try.css" rel="stylesheet">
+
+    <style>
+        .jumbotron {
+            background:url(img/courses.jpg) ;
+            color: black;
+            padding: 100px 25px;
+        }
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .logo {
+            list-image-1:url(img/courses.jpg);
+            font-size: 200px;
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        img {
+            padding-left: 50px;
+            border-radius: 20%;
+        }
+        .checked {
+            color: orange;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 250px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 39%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+</head>
+
+<body id="page-top">
+<!-- Navigation -->
+<a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Header -->
+
+<div class="jumbotron text-center">
+    <h1>Course Offered</h1>
+</div>
+<!--course 5-->
+<div id="textbox5">
+                    <h2 class="alignleft">Design Analysis and Algorithms</h2>
+                    <p style="font-size: x-large" class="alignright" >Instructor:<b><mark>Appie van de Leinfoort</mark></b></p>
+                    <br><br>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="container-fluid bg-grey">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="http://facebook.com/yourProfile" target="_blank">
+                                <img src="img/appie.jpg" alt="Avatar" style="width:300px">
+                            </a>
+                            <br><br><br><br><br><div align="left" class="button1">
+                            <button  type="button" class="btn btn-success"  onclick="decrement()">ENROLL</button>
+
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p style="font-size: xx-large">You are successfully enrolled into the course.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>Course Description</h4>
+                            <p style="font-size: larger"> Introduction to fundamental techniques for designing and analyzing algorithms, including asymptotic analysis; divide-and-conquer algorithms and recurrences; greedy algorithms; data structures; dynamic programming; graph algorithms; and randomized algorithms.
+                                Introduction to proofs, and discrete mathematics and probability (e.g., CS 103 and Stat116). If you have not taken a probability course, you should expect to do some independent reading during the course on topics including random variables, expectation, conditioning, and basic combinatorics.
+                                This is an intermediate algorithms course with an emphasis on teaching techniques for the design and analysis of efficient algorithms, emphasizing methods of application. Topics include divide-and-conquer, randomization, dynamic programming, greedy algorithms, incremental improvement, complexity, and cryptography.
+
+                            </p>
+
+                            <br><br>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p style="font-size: x-large"><b>Seats Available:  </b><form>
+                                        <input type="text" id="number" value="30"/>
+
+                                    </form>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p style="font-size: x-large"><b> Classroom:  </b>HH 301</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p style="font-size: x-large"><b>Hours: </b>Tu-Thurs 5.30 - 6.45</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p style="font-size: x-large"><b>Course Ratings:</b></p>
+
+                                    <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p style="font-size: x-large"><b>Instructor Ratings:</b></p>
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div><br><br><br><br><br><br><br><br>
+                                <div class="reviews">
+                                    <h4 >Student Reviews</h4><br>
+                                    <h5 style="color: grey;">Joseph Gordon - Fall 2016</h5>
+                                    <p style="font-size: larger">
+                                        People fight to take this class because Appie teaches it. The material is hard, and so much time has to be put into it in order to do well in the class, but it’s worth it. Being able to go to a class with someone who knows and cares about the material so much is a blessing. He is the best. No matter what subject he teaches, his class wants to learn. Give this man a raise.
+                                    </p>
+                                    <h5 style="color: grey;">Bruce Watkins - Spring 2016</h5>
+                                    <p style="font-size: larger">
+                                        The class was fantastic. The exams were well made and portioned appropriately. The instructor was funny, knowledgeable, and willing to help students. The class material was splendid and made the class enjoyable overall. I would strongly recommend this instructor to any other student.
+
+                                    </p>
+                                    <h5 style="color: grey;">Sadanand Kallakuri - Fall 2017</h5>
+                                    <p style="font-size: larger">
+                                        I really enjoyed this class. I liked the in-class demos/examples to help remember the material. I also liked that one exam was dropped. It was a nice reward for working hard throughout the semester. I would recommend Appie as an instructor to those looking to take this course
+                                    </p>
+
+
+                        </div>
+
+                    </div><hr>
+                    <script>
+
+                        function course() {
+                            window.location="next.html"
+                        }
+                        function decrement() {
+                            var modal = document.getElementById('myModal');
+                            var span = document.getElementsByClassName("close")[0];
+
+                            modal.style.display = "block";
+                            span.onclick = function(){
+                                modal.style.display = "none";
+                            }
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+
+                            var value= parseInt(document.getElementById('number').value);
+                            value =isNaN(value) ? 30 : value;
+                            value--;
+                            document.getElementById('number').value=value;
+                        }
+
+
+
+
+                    </script>
+
+                    <!-- Scroll to Top Button-->
+                    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+
+                    <!-- Bootstrap core JavaScript -->
+                    <script src="vendor/jquery/jquery.min.js"></script>
+                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+                    <!-- Plugin JavaScript -->
+                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+                    <!-- Custom scripts for this template -->
+                    <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
