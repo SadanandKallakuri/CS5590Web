@@ -87,7 +87,7 @@
             border: 1px solid #888;
             width: 39%;
         }
-        
+
         .butto {
             padding-left: 200px;
         }
@@ -108,32 +108,32 @@
         }
     </style>
 </head>
-<body class="bgg" ng-app="Weather1">
-<div ng-controller="Weathercontroller">
+<body class="bgg" ng-app="News">
+<div ng-controller="Newscontroller">
 
 
     <div class="jumbotron text-center">
         <h1>Browse Content</h1>
     </div>
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <p>Enter the topic you want to search</p>
-            <input id="topic" type="text" class="form-control" placeholder="e.g. Apple, Winter games">
-        </div>
-        <div class="col-6">
-            <p>Select your source</p>
-            <input id="source" type="text" class="form-control" placeholder="e.g. TechRadar, The Verge, BBC News, acm.org">
-        </div>
-    </div>
+    <div class="container">
         <div class="row">
-        <div class="center-block">
-            <br><br>
-            <button class="btn btn-primary" ng-click="weather1()" >Get Weather</button>
+            <div class="col-6">
+                <p>Enter the topic you want to search</p>
+                <input id="topic" type="text" class="form-control" placeholder="e.g. Apple, Winter games">
+            </div>
+            <div class="col-6">
+                <p>Select your source</p>
+                <input id="source" type="text" class="form-control" placeholder="e.g. TechRadar, The Verge, BBC News, acm.org">
+            </div>
         </div>
+        <div class="row">
+            <div class="center-block">
+                <br><br>
+                <button class="btn btn-primary" ng-click="news()" >SEARCH</button>
+            </div>
         </div>
 
-</div>
+    </div>
 
     <br><br>
     <h2><b>Top Results</b></h2>
@@ -166,17 +166,17 @@
     </div>
     <hr>
 
-        <div class="row">
-            <div class="col-sm-12"> <h2 class="alignleft"><b>{{headline2}}</b></h2>
-                <p style="font-size: larger" class="alignleft" ><b><mark>{{time2}}</mark></b></p>
+    <div class="row">
+        <div class="col-sm-12"> <h2 class="alignleft"><b>{{headline2}}</b></h2>
+            <p style="font-size: larger" class="alignleft" ><b><mark>{{time2}}</mark></b></p>
 
-<br><br>
-                <a href="{{content2}}" target="_blank">
-                    <img src="{{image2}}" class="img-fluid" width="400">
-                </a>
-            </div>
+            <br><br>
+            <a href="{{content2}}" target="_blank">
+                <img src="{{image2}}" class="img-fluid" width="400">
+            </a>
         </div>
-        <hr>
+    </div>
+    <hr>
 
     <div class="row">
         <div class="col-sm-12"> <h2 class="alignleft"><b>{{headline3}}</b></h2>
@@ -214,20 +214,20 @@
     </div>
     <hr>
 </div>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-        <i class="fa fa-angle-up"></i>
-    </a>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
 
 
 </body>

@@ -1,10 +1,10 @@
 /**
- * Created by sadan on 1/31/2017.
+ * Created by sadan on 2/13/2018.
  */
 
-var app=angular.module("Weather1",[]);
-app.controller("Weathercontroller",function ($scope,$http) {
-    $scope.weather1 = function () {
+var app=angular.module("News",[]);
+app.controller("Newscontroller",function ($scope,$http) {
+    $scope.news = function () {
         var topic1 = document.getElementById('topic').value;
 
         var source1 = document.getElementById('source').value;
