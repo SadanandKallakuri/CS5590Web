@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="labassignment6.android.com.labassignment6.GiveLyrics">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="338dp"
+        android:layout_height="100dp"
+
+        android:text="Enter lyrics here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <Button
+        android:id="@+id/GetLyrics"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Bsignup"
+        android:layout_below="@+id/TFpassword"
+        android:background="@drawable/my_button_bg"
+        android:onClick="onButtonClick"
+        android:text="SING IT"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="229dp"
+        android:background="@null"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/spkicon2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+</android.support.constraint.ConstraintLayout>

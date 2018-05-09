@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="labassignment6.android.com.labassignment6.GetLyricsActivity">
+
+    <LinearLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="229dp"
+            android:background="@null"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/micicon1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/btnSpeak"
+            android:layout_margin="10dp"
+
+            android:text="Tap to Sing and GET LYRICS" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSpeakContainer"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/voiceInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:forceHasOverlappingRendering="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="338dp"
+        android:layout_height="179dp"
+
+        android:text="The club isn't the best place to find a lover"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+</android.support.constraint.ConstraintLayout>
